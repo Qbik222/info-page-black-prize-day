@@ -113,7 +113,7 @@ body
   animation: scale .7s alternate infinite
 
 .fav-page.loading
-  max-height: 90vh
+  max-height: 100vh
   overflow: hidden
 
 .welcome
@@ -431,6 +431,8 @@ body
     z-index: 3
     position: relative
     margin: 80px 0 60px 0
+  .dropdown
+    z-index: 5
   .dropdown[open] summary::before
     transform:  rotate(180deg)
   summary::-webkit-details-marker
@@ -466,6 +468,8 @@ body
     margin-top: 10px
     max-height: 350px
     overflow-y: auto
+    background: rgba($blue, .2)
+    backdrop-filter: blur(3px)
     //border: 1px solid $white
     scrollbar-width: auto
     &::-webkit-scrollbar-thumb
