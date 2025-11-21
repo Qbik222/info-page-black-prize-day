@@ -173,11 +173,9 @@
       min-height: 45px
     &__number
       left: auto
-      //right: 102px
-      // Замість transform: translate(50%, -50%) використовуємо calc
-      // width: 39px, height: 39px, половина = 19.5px
-      right: calc(102px - 19.5px)
-      top: calc(10px - 19.5px)
+      right: 102px
+      transform: translate(50%, -50%)
+      top: 10px
       width: 39px
       height: 39px
       font-size: 24px
@@ -208,7 +206,7 @@
         .participate__icon-txt
           font-size: 46px
         .participate__number
-          top: calc(0px - 5px)
+          top: -5px
       &:nth-child(2)
         margin: -10px 0 -80px 50px
         .participate__icon
@@ -231,10 +229,9 @@
       &:nth-child(even)
         flex-direction: row-reverse
         .participate__number
-          // Замість transform: translate(-50%, -50%) використовуємо calc
-          // width: 39px, height: 39px, половина = 19.5px
-          left: calc(102px - 19.5px)
-          top: calc(17px - 19.5px)
+          transform: translate(-50%, -50%)
+          left: 102px
+          top: 17px
   .dropdown, .drop__reminder
     max-width: 95vw
     position: relative

@@ -313,10 +313,7 @@ body
     font-size: 33px
     color: $white
     padding-top: 6px
-    // Замість transform: translate(-50%, -50%) використовуємо calc
-    // left: 0, top: 0 означає що це відносно батьківського, потрібно змістити на половину розміру
-    left: calc(0px - 27px)
-    top: calc(0px - 27px)
+    transform: translate(-50%, -50%)
   &__title
     color: $magenta
     font-size: 40px
