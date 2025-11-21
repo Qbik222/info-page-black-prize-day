@@ -28,7 +28,7 @@
 @media screen and (max-width: 900px)
   .promo
     &__illustration
-      right: -110px
+      left: calc(100% - 250px)
   .drop
     &__decor
       &-left
@@ -104,7 +104,8 @@
   .promo
     &__illustration
       transform: scale(1) translateX(50%)
-      right: 50%
+      //right: 50%
+      left: calc(100% - 485px)
       width: 300px
       height: 282px
       top: auto
@@ -133,8 +134,12 @@
     &__element
       &_ball
         max-width: 130px
+        left: calc(50% - 65px)
+        top: calc(50% - 65px)
       &_vector
         max-width: 244px
+        top: calc(50% - 122px)
+        left: calc(50% - 122px)
         z-index: 1
       &_chips-1
         max-width: 221px
@@ -168,9 +173,11 @@
       min-height: 45px
     &__number
       left: auto
-      right: 102px
-      transform: translate(50%, -50%)
-      top: 10px
+      //right: 102px
+      // Замість transform: translate(50%, -50%) використовуємо calc
+      // width: 39px, height: 39px, половина = 19.5px
+      right: calc(102px - 19.5px)
+      top: calc(10px - 19.5px)
       width: 39px
       height: 39px
       font-size: 24px
@@ -184,10 +191,14 @@
         max-width: 118px
         height: 118px
         padding-right: 7px
+        top: calc(50% - 87px)
+        left: calc(50% - 87px)
       &-inner
         max-width: 100px
         min-width: 100px
         height: 100px
+        top: calc(50% - 78px)
+        left: calc(50% - 78px)
     &__step
       display: flex
       flex-direction: row
@@ -197,7 +208,7 @@
         .participate__icon-txt
           font-size: 46px
         .participate__number
-          top: -5px
+          top: calc(0px - 5px)
       &:nth-child(2)
         margin: -10px 0 -80px 50px
         .participate__icon
@@ -220,9 +231,10 @@
       &:nth-child(even)
         flex-direction: row-reverse
         .participate__number
-          transform: translate(-50%, -50%)
-          left: 102px
-          top: 17px
+          // Замість transform: translate(-50%, -50%) використовуємо calc
+          // width: 39px, height: 39px, половина = 19.5px
+          left: calc(102px - 19.5px)
+          top: calc(17px - 19.5px)
   .dropdown, .drop__reminder
     max-width: 95vw
     position: relative
